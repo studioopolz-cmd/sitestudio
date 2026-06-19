@@ -1,7 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
-import { Star } from "@/components/star"
+import Image from "next/image"
 
 const links = [
   { label: "Serviços", href: "#servicos" },
@@ -29,10 +29,16 @@ export function SiteNav() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8">
-        <a href="#topo" className="flex items-center gap-2">
-          <Star className="size-4 text-primary" />
-          <span className="font-display text-lg tracking-tight">OPOLZ</span>
-          <span className="label-mono text-muted-foreground">STUDIO®</span>
+        <a href="#topo" className="flex items-center gap-3" aria-label="OPOLZ Studio — início">
+          <Image
+            src="/brand/opolz-red.png"
+            alt="OPOLZ Studio"
+            width={1252}
+            height={768}
+            className="h-8 w-auto"
+            priority
+          />
+          <span className="label-mono hidden text-muted-foreground sm:inline">STUDIO®</span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

@@ -16,6 +16,14 @@ export function HeroSection() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-5 pb-16 pt-8 md:px-8 lg:grid-cols-12 lg:gap-8 lg:pb-24 lg:pt-14">
         {/* headline */}
         <div className="lg:col-span-7">
+          <Image
+            src="/brand/opolz-red.png"
+            alt="OPOLZ Studio"
+            width={1252}
+            height={768}
+            priority
+            className="mb-8 h-16 w-auto sm:h-20 lg:h-24"
+          />
           <h1 className="font-display text-balance text-[2.6rem] uppercase leading-[0.92] sm:text-6xl lg:text-7xl">
             Não criamos
             <br />
@@ -57,8 +65,8 @@ export function HeroSection() {
         <div className="relative lg:col-span-5">
           <div className="grain group relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card">
             <Image
-              src="/works/hero-box.png"
-              alt="Caixa metálica com a etiqueta vermelha do OPOLZ Studio"
+              src="/works/sault.png"
+              alt="Embalagem de creatina da Sault Nutrition desenvolvida pelo OPOLZ Studio"
               fill
               priority
               className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
