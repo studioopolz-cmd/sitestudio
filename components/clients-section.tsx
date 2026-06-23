@@ -6,7 +6,7 @@ const clients = [
   "Yes Energy",
   "Cerberus®",
   "Bee Culture",
-  "Dropz",
+  "Dr. Peanut",
 ]
 
 export function ClientsSection() {

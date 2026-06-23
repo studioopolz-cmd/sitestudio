@@ -65,11 +65,11 @@ export function HeroSection() {
         <div className="relative lg:col-span-5">
           <div className="grain group relative aspect-[4/5] overflow-hidden rounded-2xl border border-border bg-card">
             <Image
-              src="/works/sault.png"
-              alt="Embalagem de creatina da Sault Nutrition desenvolvida pelo OPOLZ Studio"
+              src="/works/caixa.png"
+              alt="Caixa metálica com a etiqueta vermelha da Dr Peanut"
               fill
               priority
-              className="object-cover transition-transform duration-[1200ms] ease-out group-hover:scale-105"
+              className="object-contain p-6 transition-transform duration-[1200ms] ease-out group-hover:scale-105"
               sizes="(max-width: 1024px) 100vw, 40vw"
             />
             <div className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-background/90 to-transparent p-5">

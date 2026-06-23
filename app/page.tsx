@@ -7,6 +7,7 @@ import { ClientsSection } from "@/components/clients-section"
 import { PricingSection } from "@/components/pricing-section"
 import { ContactSection } from "@/components/contact-section"
 import { SiteFooter } from "@/components/site-footer"
+import { WhatsAppFloat } from "@/components/whatsapp-float"
 
 export default function Page() {
   return (
@@ -20,6 +21,7 @@ export default function Page() {
       <PricingSection />
       <ContactSection />
       <SiteFooter />
+      <WhatsAppFloat />
     </main>
   )
 }

@@ -3,7 +3,6 @@ import { Star } from "@/components/star"
 const packages = [
   {
     name: "Básico",
-    price: "R$897",
     deadline: "15 a 20 dias úteis",
     desc: "Ideal para marcas que precisam de uma identidade visual sólida e profissional.",
     features: [
@@ -17,7 +16,6 @@ const packages = [
   },
   {
     name: "Gold",
-    price: "R$1.497",
     deadline: "20 a 25 dias úteis",
     desc: "Para marcas que querem transmitir mais presença, consistência e valor no mercado.",
     features: [
@@ -31,7 +29,6 @@ const packages = [
   },
   {
     name: "Premium",
-    price: "R$2.497",
     deadline: "25 a 35 dias úteis",
     desc: "A experiência completa para marcas que querem dominar cada ponto de contato.",
     features: [
@@ -86,7 +83,7 @@ export function PricingSection() {
               </p>
 
               <div className="mt-6">
-                <span className="font-display text-4xl">{p.price}</span>
+                <span className="font-display text-3xl">Sob consulta</span>
                 <span
                   className={`label-mono mt-2 block ${
                     p.featured ? "text-primary-foreground/70" : "text-muted-foreground"
@@ -117,14 +114,25 @@ export function PricingSection() {
                     : "bg-foreground text-background"
                 }`}
               >
-                <span className="label-mono">Quero este pacote</span>
+                <span className="label-mono">Solicitar orçamento</span>
               </a>
             </article>
           ))}
         </div>
-        <p className="mt-6 label-mono text-muted-foreground">
-          * Prazos contados em dias úteis após aprovação do briefing.
-        </p>
+        <div className="mt-8 flex flex-col gap-2">
+          <p className="label-mono text-muted-foreground">
+            Valores definidos sob consulta — cada projeto é negociado caso a caso.
+          </p>
+          <p className="label-mono text-muted-foreground">
+            Desenvolvimento de site* é opcional e orçado à parte.
+          </p>
+          <p className="label-mono text-muted-foreground">
+            * O orçamento de site pode variar caso a caso, conforme o escopo do projeto.
+          </p>
+          <p className="label-mono text-muted-foreground">
+            Prazos contados em dias úteis após aprovação do briefing.
+          </p>
+        </div>
       </div>
     </section>
   )
