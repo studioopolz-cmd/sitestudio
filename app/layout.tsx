@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   display: 'swap',
 })
 
-const siteUrl = 'https://opolzstudio.com'
+const siteUrl = 'https://www.opolzstudio.com'
 const siteName = 'OPOLZ STUDIO'
 const description =
   'Estúdio criativo brasileiro. Não criamos apenas visuais — construímos presença para marcas que querem ser lembradas. Branding, 3D para produtos e campanhas visuais.'
