@@ -11,12 +11,12 @@ export function ContactSection() {
 
         <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="https://wa.me/5541998685110"
+            href="https://wa.me/554196887504"
             target="_blank"
             rel="noreferrer"
             className="group flex items-center gap-3 rounded-full bg-primary px-7 py-4 text-primary-foreground transition-transform duration-300 hover:scale-105"
           >
-            <span className="label-mono">(41) 99868-5110</span>
+            <span className="label-mono">(41) 9688-7504</span>
             <span className="transition-transform duration-300 group-hover:translate-x-1">
               {"->"}
             </span>

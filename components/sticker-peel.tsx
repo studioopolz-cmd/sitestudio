@@ -104,7 +104,7 @@ export function StickerPeel() {
       <div className="mx-auto max-w-5xl px-5 py-16 md:px-8 md:py-24">
         <div
           ref={wrapRef}
-          className="relative mx-auto aspect-[16/7] w-full select-none overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-background to-card"
+          className="relative mx-auto aspect-[4/5] w-full select-none overflow-hidden rounded-2xl border border-border bg-gradient-to-br from-background to-card sm:aspect-[16/9] md:aspect-[16/7]"
         >
           {/* mensagem revelada por baixo */}
           <div className="absolute inset-0 flex flex-col items-center justify-center gap-5 p-6 text-center md:gap-7">
