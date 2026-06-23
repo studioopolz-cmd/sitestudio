@@ -14,26 +14,75 @@ const geistMono = Geist_Mono({
   display: 'swap',
 })
 
+const siteUrl = 'https://opolzstudio.com.br'
+const siteName = 'OPOLZ STUDIO'
+const description =
+  'Estúdio criativo brasileiro. Não criamos apenas visuais — construímos presença para marcas que querem ser lembradas. Branding, 3D para produtos e campanhas visuais.'
+
 export const metadata: Metadata = {
-  title: 'OPOLZ STUDIO — Marcas com Atitude',
-  description:
-    'Estúdio criativo brasileiro. Não criamos apenas visuais — construímos presença para marcas que querem ser lembradas. Branding, 3D para produtos e campanhas visuais.',
-  generator: 'v0.app',
-  icons: {
-    icon: [
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'OPOLZ STUDIO — Marcas com Atitude | Branding & 3D',
+    template: '%s | OPOLZ STUDIO',
+  },
+  description,
+  keywords: [
+    'estúdio criativo',
+    'branding',
+    'identidade visual',
+    '3D para produtos',
+    'packaging',
+    'design de embalagem',
+    'campanhas visuais',
+    'direção de arte',
+    'logo',
+    'marca',
+    'Brasil',
+  ],
+  authors: [{ name: siteName }],
+  creator: siteName,
+  publisher: siteName,
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'pt_BR',
+    url: siteUrl,
+    siteName,
+    title: 'OPOLZ STUDIO — Marcas com Atitude',
+    description,
+    images: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'OPOLZ STUDIO — Marcas com Atitude',
       },
     ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'OPOLZ STUDIO — Marcas com Atitude',
+    description,
+    images: ['/og-image.png'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: [
+      { url: '/icon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
     apple: '/apple-icon.png',
   },
 }
@@ -46,6 +95,21 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${archivo.variable} ${geistMono.variable} bg-background`}>
       <body className="font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Organization',
+              name: siteName,
+              url: siteUrl,
+              logo: `${siteUrl}/icon.png`,
+              description,
+              areaServed: 'BR',
+              sameAs: ['https://www.instagram.com/opolzstudio/'],
+            }),
+          }}
+        />
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>

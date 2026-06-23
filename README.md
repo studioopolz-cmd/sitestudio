@@ -1,33 +1,30 @@
-# v0-landing-page-designer
+# OPOLZ STUDIO
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+Site institucional do OPOLZ STUDIO — estúdio criativo brasileiro de branding, 3D para produtos e campanhas visuais. Construído com [Next.js](https://nextjs.org).
 
-## Built with v0
+## Rodando localmente
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
-
-[Continue working on v0 →](https://v0.app/chat/projects/prj_L9K9jAMohpbYJRRvMgfAq2nbSJWD)
-
-## Getting Started
-
-First, run the development server:
+Instale as dependências e inicie o servidor de desenvolvimento:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
+# ou: npm install && npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+A página principal fica em `app/page.tsx` e as seções em `components/`. As alterações recarregam automaticamente.
 
-## Learn More
+## Build de produção
 
-To learn more, take a look at the following resources:
+```bash
+pnpm build
+pnpm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
+## Tecnologias
+
+- [Next.js](https://nextjs.org/docs) (App Router)
+- React + TypeScript
+- Tailwind CSS
