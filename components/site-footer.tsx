@@ -1,12 +1,17 @@
-import { Star } from "@/components/star"
+import Image from "next/image"
 
 export function SiteFooter() {
   return (
     <footer className="border-t border-border">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-5 py-12 md:flex-row md:items-center md:justify-between md:px-8">
-        <div className="flex items-center gap-2">
-          <Star className="size-4 text-primary" />
-          <span className="font-display text-lg tracking-tight">OPOLZ</span>
+        <div className="flex items-center gap-3">
+          <Image
+            src="/brand/opolz-red.png"
+            alt="OPOLZ Studio"
+            width={1252}
+            height={768}
+            className="h-9 w-auto"
+          />
           <span className="label-mono text-muted-foreground">STUDIO®</span>
         </div>
 

@@ -1,12 +1,12 @@
 const clients = [
-  "Dr. Peanut",
+  "Sault Nutrition",
   "Brownie da Buu",
   "Dark Suplementos",
   "Luka Editora",
   "Yes Energy",
   "Cerberus®",
-  "Sault Nutrition",
-  "The Last Viking",
+  "Bee Culture",
+  "Dropz",
 ]
 
 export function ClientsSection() {
