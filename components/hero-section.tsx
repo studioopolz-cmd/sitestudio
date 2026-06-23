@@ -80,26 +80,6 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* marquee */}
-      <div className="border-y border-border bg-card/40 py-4">
-        <div className="flex animate-[marquee_28s_linear_infinite] gap-8 whitespace-nowrap">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <span key={i} className="flex items-center gap-8">
-              <span className="font-display text-xl uppercase tracking-tight text-muted-foreground">
-                Marcas com Atitude
-              </span>
-              <Star className="size-3 shrink-0 text-primary" />
-            </span>
-          ))}
-        </div>
-      </div>
-
-      <style>{`
-        @keyframes marquee {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-      `}</style>
     </section>
   )
 }

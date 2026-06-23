@@ -1,5 +1,6 @@
 import { SiteNav } from "@/components/site-nav"
 import { HeroSection } from "@/components/hero-section"
+import { StickerPeel } from "@/components/sticker-peel"
 import { ServicesSection } from "@/components/services-section"
 import { ProcessSection } from "@/components/process-section"
 import { WorksSection } from "@/components/works-section"
@@ -14,6 +15,7 @@ export default function Page() {
     <main className="min-h-screen bg-background">
       <SiteNav />
       <HeroSection />
+      <StickerPeel />
       <ServicesSection />
       <ProcessSection />
       <WorksSection />
